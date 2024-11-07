@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;  
+  background-image: url(Image/Artboard\ 1.jpg);
+  background-color: #ECEBE1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.Logo{
+  display: flex;
+  width: 125px;
+  height: 68px;
+}
+
+.header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.navigation{
+  display: flex;
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+}
+
+.nav-link {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color:#DC572A;
+}
+
+.social-icons{
+  margin-left: 25px;
+}
+.social-icons img{
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  fill: #000000;
+}
+
+.divider{
+  border: 0;
+  margin-bottom: 60px;
+  border-top: 3px solid #DC572A;
+}
+
+.content-1{
+  display: flex;
+}
+
+.main-image-1{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.main-image-1 img{
+  height: 770px;
+  animation: cardAppear 2.5s forwards;
+}
+
+.content-list{
+  padding-bottom: 40px;
+}
+
+.content-1-text{
+  margin-left: 28px;
+  margin-right: 75px;
+  margin-top: 150px;
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(300%); /* 從頁面左側開始 */
+  }
+  to {
+      transform: translateX(0); /* 移動到原始位置 */
+  }
+}
+
+.content-1-text h3{
+  font-family: "Oleo Script Swash Caps", serif;
+  font-style: normal;
+  font-size: 32px;
+  color: #DC572A;
+  line-height: 32px;
+}
+
+.content-1-text h2{
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-size: 70px;
+  color: #000000;
+  line-height: 75px;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.p-1{
+    font-family: "Roboto", serif;
+    font-style: normal;
+    font-size: 20px;
+    color: #000000;
+    line-height: 34px;
+    padding-bottom: 20px;
+}
+
+.dots{
+  display: flex;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.page1:hover , .page2:hover {
+  background-color: #DC572A;
+}
+
+.page1 {
+  background-color: #000000;
+}
+
+.page2 {
+  background-color: #90ABA7;
+}
+
+footer p{
+  
+}
+
+/*footer {
+  background-color: #DC572A;
+  color: #ECEBE1;
+  text-align: end;
+  width: 100%;
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-size: smaller;
+  padding: 7px 50px;
+}*/
+
+@keyframes cardAppear {
+  0% {
+    transform: rotate3d(0,0,1,15deg) translate3d(0,-100vh,0);
+  }
+  30% {
+    transform: rotate3d(0,0,0,0deg) translate3d(0,0,0);
+  }
+  65% {
+    transform: rotate3d(0,0,0,0deg) translate3d(0,0,0) scale3d(1,1,1);
+  }
+  80% {
+    transform: rotate3d(0,0,1,-5deg) scale3d(1.05,1.05,1);
+  }
+}

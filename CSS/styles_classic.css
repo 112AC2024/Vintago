@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;  
+  background-image: url(Image/Artboard\ 1.jpg);
+  background-color: #ECEBE1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.Logo{
+  display: flex;
+  width: 125px;
+  height: 68px;
+}
+
+.header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.navigation{
+  display: flex;
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+}
+
+.nav-link {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color:#DC572A;
+}
+
+.social-icons{
+  margin-left: 25px;
+}
+.social-icons img{
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  fill: #000000;
+}
+
+.divider{
+  border: 0;
+  margin-bottom: 60px;
+  border-top: 3px solid #DC572A;
+}
+
+.car-model{
+  display: flex;
+}
+
+.car-info{
+  display: flex;
+  padding-left: 100px;
+  padding-right: 50px;
+}
+
+.car-details{
+  width: 800px;
+}
+
+.title h1{
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-size: 200px;
+  font-weight: bold;
+  color: black;
+  animation: slideIn-title 1.5s ease-out forwards;
+  line-height: 150px;
+}
+
+@keyframes slideIn-title {
+  from {
+      transform: translateX(-300%); /* 從頁面左側開始 */}
+  to {
+      transform: translateX(0); /* 移動到原始位置 */}
+}
+
+.title h2{
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  animation: slideIn-title 2.5s ease-out forwards;
+  line-height: 160px;
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+
+.car-name h3, .car-features h3, .car-country h3{
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-size: 35px;
+  color: #000000;
+  line-height: 35px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  animation: slideIn-title 3s ease-out forwards;
+}
+
+.car-name p, .car-features p, .car-country p{
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-size: 20px;
+  color: #000000;
+  line-height: 34px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  animation: slideIn-title 3s ease-out forwards;
+}
+
+.image{
+  overflow: hidden; /* 防止圖片溢出 */
+}
+
+.image img{
+  animation: slideIn 3s ease-out forwards; /* 動態效果 */
+  filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.3)); /* 添加陰影 */
+  padding-top: 400px;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(300%); /* 從頁面右側開始 */
+  }
+  to {
+      transform: translateX(0); /* 移動到原始位置 */
+  }
+}
+
+.background-overlay {
+  position: absolute;
+  right: 0; /* 將紅色色塊向右側偏移，以呈現延伸效果 */
+  top: 90px;
+  height: 1080px;
+  width: 300px;
+  background-color: #DC572A; /* 紅色背景 */
+  animation: slideIn-red 1.5s ease-out forwards;
+  z-index: 0;
+}
+
+@keyframes slideIn-red {
+  from {
+      transform: translateY(-300%); /* 從頁面上側開始 */
+  }
+  to {
+      transform: translateY(0); /* 移動到原始位置 */
+  }
+}
+
+.background-overlay-2 {
+  position: absolute;
+  right: 300px; /* 將紅色色塊向右側偏移，以呈現延伸效果 */
+  top: 90px;
+  height: 1080px;
+  width: 50px;
+  background-color: #1d1d1d;
+  animation: slideIn-orange 1.5s ease-out forwards;
+}
+
+@keyframes slideIn-orange {
+  from {
+      transform: translateY(300%); /* 從頁面下側開始 */
+  }
+  to {
+      transform: translateY(0); /* 移動到原始位置 */
+  }
+}
+
+
+.dots {
+  position: absolute;
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 118px;
+  margin-top: 700px;
+  animation: slideIn-dots 2.5s ease-out forwards;
+}
+
+@keyframes slideIn-dots {
+  from {
+      transform: translateY(500%); /* 從頁面下側開始 */
+  }
+  to {
+      transform: translateY(0); /* 移動到原始位置 */
+  }
+}
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.dot.active {
+  background-color: #333; /* 活動的點 */
+}
+
+.red { background-color: #DC572A; }
+.gray { background-color: #A8A9AD; }
+.yellow { background-color: #DDC5A2; }
+.green { background-color: #9DB77A; }

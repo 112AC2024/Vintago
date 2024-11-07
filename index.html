@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintago</title>
+  <link rel="stylesheet" href="CSS/styles_home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Oleo+Script+Swash+Caps&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    function goToPageA() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+  <script>
+    function goToPageB() {
+      window.location.href = "index-home2.html";
+    }
+  </script>
+
+  <div class="header">
+      <div class="Logo">
+        <img src="Image/Logo.png" alt="Vintago Logo" class="logo">
+      </div>
+      
+      <div class="navigation">
+        <nav>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="index-classic.html" class="nav-link">Classic Models</a>
+          <a href="index-contact.html" class="nav-link">Contact Us</a>
+        </nav>
+        
+        <div class="social-icons">
+          <img src="Image/ig.svg" alt="Instagram">
+          <img src="Image/fb.svg" alt="Facebook">
+        </div>
+      </div>
+  </div>
+
+  <hr class="divider">
+  
+  <div class="content-list">
+
+    <div class="content-1">
+
+      <section class="main-image-1">
+        <img src="Image/Car-image.png" alt="main-image-1">
+      </section>
+
+      <section class="content-1-text">
+        <h3>
+          About Us
+        </h3>
+        <h2>
+          REVIVING CLASSICS,
+          <br>
+          DRIVING LEGACY
+        </h2>
+        <p class="p-1">
+          Vintago is an automotive brand that seamlessly merges classic car design with modern technology. We are dedicated to rekindling the passion for vintage vehicles while providing exceptional modern performance and driving experiences.
+        </p>
+        <p class="p-1">
+          Our mission is to combine exquisite craftsmanship with innovative technology, creating vehicles that are rich in historical essence yet meet contemporary needs. Vintago appeals to those who have a deep appreciation for quality, design, and nostalgia.
+        </p>
+
+        <div class="dots">
+          <div class="dot page1" onclick="goToPageA()"></div>
+          <div class="dot page2" onclick="goToPageB()"></div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+
+  <!--
+  <footer>
+    <p>© 2024 Vintago | Design by Stanfor & Zoey</p>
+  </footer> 
+  -->
+
+</body>
+</html>

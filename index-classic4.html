@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Classic Car 1950</title>
+  <link rel="stylesheet" href="CSS/styles_classic.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    function goToPageA() {
+      window.location.href = "index-home.html";
+    }
+  </script>
+
+  <script>
+    function goToPageB() {
+      window.location.href = "index-home2.html";
+    }
+  </script>
+
+  <div class="header">
+      <div class="Logo">
+        <img src="Image/Logo.png" alt="Vintago Logo" class="logo">
+      </div>
+      
+      <div class="navigation">
+        <nav>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="index-classic.html" class="nav-link">Classic Models</a>
+          <a href="index-contact.html" class="nav-link">Contact Us</a>
+        </nav>
+        
+        <div class="social-icons">
+          <img src="Image/ig.svg" alt="Instagram">
+          <img src="Image/fb.svg" alt="Facebook">
+        </div>
+      </div>
+  </div>
+
+  <hr class="divider">
+  
+      <div class="car-model">
+
+        <section class="car-info">
+          <div class="title">
+            <h1>CLASSIC</h1>
+            <h2>1950</h2>
+          <div>
+          
+          <div class="car-details">
+            <div class="car-name">
+              <h3>Car Model:</h3>
+              <p>Rosso Sprint</p>
+            </div>
+
+            <div class="car-features">
+              <h3>
+                Features:
+              </h3>
+              <p>
+                Bright red body full of racing spirit, with spare tires on both sides, vintage round headlights, and a dynamic shape, embodying Italian passion in its design.
+              </p>
+            </div>
+
+            <div class="car-country">
+              <h3>
+                Country of Origin:
+              </h3>
+              <p>
+                Italy
+              </p>
+          </div>   
+        </section>
+
+        <section class="car-image">
+          <div class="image">
+            <img src="Image/car4_1.png" alt="Classic-Car-1">
+          </div>
+
+          <div class="background-overlay"></div>
+          <div class="background-overlay-2"></div>
+        </section>
+
+        <div class="dots">
+          <div class="dot red" onclick="goToPageA()"></div>
+          <div class="dot gray" onclick="goToPageB()"></div>
+          <div class="dot yellow" onclick="goToPageC()"></div>
+          <div class="dot green" onclick="goToPageD()"></div>
+        </div>
+
+        <script>
+          function goToPageA() {
+            window.location.href = "index-classic.html";  // 將網址設為頁面 B 的路徑
+          }
+        </script>
+
+        <script>
+          function goToPageB() {
+            window.location.href = "index-classic2.html";  // 將網址設為頁面 B 的路徑
+          }
+        </script>
+
+        <script>
+          function goToPageC() {
+            window.location.href = "index-classic3.html";  // 將網址設為頁面 C 的路徑
+          }
+        </script>
+
+        <script>
+          function goToPageD() {
+            window.location.href = "index-classic4.html";  // 將網址設為頁面 C 的路徑
+          }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+              const backgroundOverlay = document.querySelector(".background-overlay");
+              if (backgroundOverlay) {
+                backgroundOverlay.style.backgroundColor = "#5e6d41";
+              }
+            });
+        </script>
+    </div>
+</body>
+</html>

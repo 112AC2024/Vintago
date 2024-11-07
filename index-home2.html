@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vintago</title>
+  <link rel="stylesheet" href="CSS/styles_home2.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Oleo+Script+Swash+Caps&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <script>
+    function goToPageA() {
+      window.location.href = "index-home.html";
+    }
+  </script>
+
+  <script>
+    function goToPageB() {
+      window.location.href = "index-home2.html";
+    }
+  </script>
+
+  <div class="header">
+      <div class="Logo">
+        <img src="Image/Logo.png" alt="Vintago Logo" class="logo">
+      </div>
+      
+      <div class="navigation">
+        <nav>
+          <a href="index.html" class="nav-link">Home</a>
+          <a href="index-classic.html" class="nav-link">Classic Models</a>
+          <a href="index-contact.html" class="nav-link">Contact Us</a>
+        </nav>
+        
+        <div class="social-icons">
+          <img src="Image/ig.svg" alt="Instagram">
+          <img src="Image/fb.svg" alt="Facebook">
+        </div>
+      </div>
+  </div>
+
+  <hr class="divider">
+  
+  <div class="content-list">
+
+    <div class="content-2">
+
+      <section class="main-image-2">
+        <img src="Image/Car-image2.png" alt="main-image-2">
+      </section>
+
+      <section class="content-2-text">
+        <h3>
+          Our Mission
+        </h3>
+        <h4>
+          Blend of Classic and Modern
+        </h4>
+        <p>
+          Each Vintago model embodies vintage aesthetics paired with state-of-the-art technology, allowing drivers to enjoy the charm of classic design with the benefits of modern convenience.
+        </p>
+        <h4>
+          Exquisite Craftsmanship
+        </h4>
+        <p>
+          Every detail is carefully crafted to ensure quality and uniqueness. Vintago emphasizes artisanal craftsmanship, offering owners a product that stands out.
+        </p>
+        <h4>
+          Unique Experience
+        </h4>
+        <p>
+          With limited edition models and customization options, we provide a unique experience that appeals to discerning car enthusiasts and collectors.
+        </p>
+
+        <div class="dots">
+          <div class="dot page1" onclick="goToPageA()"></div>
+          <div class="dot page2" onclick="goToPageB()"></div>
+        </div>
+
+      </section>
+    </div>
+  </div>
+</body>
+</html>

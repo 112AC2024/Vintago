@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dm-serif-display-regular {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  font-family: Noto Sans, sans-serif;
+  font-style: normal;
+  background-image: url(Image/Artboard\ 1.jpg);
+  background-color: #ECEBE1;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.Logo{
+  display: flex;
+  width: 125px;
+  height: 68px;
+}
+
+.header nav {
+  display: flex;
+  gap: 25px;
+}
+
+.navigation{
+  display: flex;
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+}
+
+.nav-link {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  color:#DC572A;
+}
+
+.social-icons{
+  margin-left: 25px;
+}
+.social-icons img{
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+  fill: #000000;
+}
+
+.divider{
+  border: 0;
+  margin-bottom: 60px;
+  border-top: 3px solid #DC572A;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact-form{
+  width: 1100px;
+  height: 780px;
+  padding: 20px 150px 20px 160px;
+  animation: bounce 1s ease-out forwards;
+}
+
+.contact-form h2{
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-size: 60px;
+  color: #000000;
+  line-height: 75px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.contact-form p{
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-size: 25px;
+  color: #000000;
+  line-height: 40px;
+  padding-bottom: 35px;
+}
+
+[type="name"]{
+  background: #D2D1C4;
+  border-radius: 20px;
+  height: 75px;
+  width: 780px;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  font-style: normal;
+  color: #707070;
+  border-style: inherit;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+[type="email"]{
+  background: #D2D1C4;
+  border-radius: 20px;
+  height: 75px;
+  width: 780px;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  font-style: normal;
+  color: #707070;
+  border-style: inherit;
+  padding-left: 30px;
+  margin-bottom: 25px;
+}
+
+textarea{
+  background: #D2D1C4;
+  border-radius: 20px;
+  height: 180px;
+  width: 780px;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  font-style: normal;
+  color: #707070;
+  border-style: inherit;
+  padding: 30px 30px 30px 30px;
+  margin-bottom: 25px;
+}
+
+button{
+  background: #000000;
+  color:#D2D1C4;
+  font-family: "Roboto", serif;
+  font-size: 20px;
+  font-style: normal;
+  width: 780px;
+  height: 70px;
+  border-radius: 50px;
+  border-style: inherit;
+}
+
+button:hover{
+  background: #DC572A;
+  color: #000000;
+}
+
+.contact-info{
+  width: 960px;
+  height: 780px;
+  padding: 135px 170px 135px 170px;
+  background-color:#DC572A;
+  border-radius: 50px 0px 0px 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+.contact-info h2{
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-size: 50px;
+  color: #000000;
+  line-height: 75px;
+  padding-bottom: 40px;
+}
+
+.contact-info p{
+  font-family: "Roboto", serif;
+  font-style: normal;
+  font-size: 25px;
+  color: #000000;
+  line-height: 30px;
+  padding: 12px;
+}
+
+.info-email, .info-phone, .info-time, .info-location{
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.info-email img, .info-phone img, .info-time img, .info-location img{
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateX(300%); /* 從頁面左側開始 */
+  }
+  to {
+      transform: translateX(0); /* 移動到原始位置 */
+  }
+}
+
+@keyframes bounce {
+  0% {transform: translateY(0);}
+  40% {transform: translateY(-100px);}
+}
